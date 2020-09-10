@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section id="container">
+      <div class="main">
+        <h1>Shoppify</h1>
+        <form id="form">
+          <div>
+            <label>Item Name</label>
+            <input type="text" required id="name" placeholder="Cooking oil" />
+          </div>
+          <div>
+            <label>Quantity</label>
+            <input type="number" required id="qty" placeholder="2" max="30" />
+          </div>
+          <button type="submit">ADD</button>
+        </form>
+
+        <div class="list">
+          <h1>Items to buy</h1>
+        </div>
+        <div class="completed-list">
+          <h1>Items purchased</h1>
+          <div class="list-item complete">
+            <input type="checkbox" onchange="completed(this)" class="done" />
+            <span>dfs</span> <span>3</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
